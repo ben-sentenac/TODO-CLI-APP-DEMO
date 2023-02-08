@@ -1,0 +1,20 @@
+[
+    {
+        "name":"my-custom-task1",
+        "task":"",
+        "completed":true,
+        "id":1
+    },
+    {
+        "name":"my-custom-task2",
+        "task":"",
+        "completed":false,
+        "id":2
+    },
+    {
+        "name":"my-custom-task3",
+        "task":[],
+        "completed":true,
+        "id":3
+    }
+]
