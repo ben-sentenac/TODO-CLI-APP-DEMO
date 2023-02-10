@@ -2,7 +2,7 @@
 # TODO-CLI
 
 A simple cli-app todo task manager
-This small App is design to eductionnal purpose 
+This small App is an exercice design to eductionnal purpose 
 
 ## Badges
 
@@ -17,7 +17,11 @@ This small App is design to eductionnal purpose
 - Filter todo 
 - Add todo
 - Update todo
-- Delete todo*
+
+
+## TO DO
+
+- delete todo
 
 
 ## Installation
