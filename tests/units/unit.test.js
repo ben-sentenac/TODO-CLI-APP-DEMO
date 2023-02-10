@@ -5,7 +5,7 @@ import data from './data.json' assert {type: "json"};
 
 import { commandGenerator } from '../../src/command_handler.js';
 
-import { getAllTodos, getFilteredTodo } from '../../src/controller.js';
+import { getAllTodos, getFilteredTodo,addNewTodo } from '../../src/controller.js';
 
 
 
@@ -42,6 +42,19 @@ test('Unit test suite for todoapp controller', async (t) => {
         let args = ['name=ben'];
         let todoTest = getFilteredTodo(null, args);
         assert.deepEqual(todoTest, []);
+    });
+});
+
+test('Add new todo test suite', async (t) => {
+        await t.test('It should return a new  task',(t) => {
+            const todoMap = addNewTodo(['My-super-todo','tasks=go to cinema, buy a clone']);
+            assert.equal(typeof todoMap,'object');
+            assert.ok(todoMap.has('id'));
+            assert.ok(todoMap.has('name'));
+            assert.ok(todoMap.has('completed'));
+            assert.ok(todoMap.has('tasks'));
+            assert.ok(Array.isArray(todoMap.get('tasks')));
+            assert.ok(todoMap.has('at'));
     });
 });
 

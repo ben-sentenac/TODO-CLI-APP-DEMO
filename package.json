@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "bin": {
-    "to-do": "bin/todo.js"
+    "todo": "bin/todo.js"
   },
   "scripts": {
     "test": "node --test"

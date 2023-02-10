@@ -1,30 +1,15 @@
+import process from 'node:process';
 import { commandHandler } from './command_handler.js';
 
+const toDo = Object.create(null);
 
-const noArgumentMessageText = `
-Usage: todo --new <todo_name> <tasks>
+toDo.start = () => {
+  //todo handler
+  commandHandler(process.argv);
+};
 
-Todo list app to manage tasks
+export { toDo };
 
-Arguments:
-  todo_name                  name of the todo
-  tasks                      tasks list
-Options:
-  --first                 display just the first todo
-  -h, --help              display help for command
-
-`;
-
-
-
-//--list
-//--new taskname  [tasks,...] 
-//--list -s name=taskname
-
-
-
-
-commandHandler(process.argv);
 
 
 
