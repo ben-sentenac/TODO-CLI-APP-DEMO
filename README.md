@@ -25,7 +25,7 @@ This small App is design to eductionnal purpose
 Install todo 
 
 ```bash
-  https://github.com/ben-sentenac/TODO-CLI-APP-DEMO.git
+  git clone https://github.com/ben-sentenac/TODO-CLI-APP-DEMO.git
   cd <your directory>
   sudo npm link
   todo
