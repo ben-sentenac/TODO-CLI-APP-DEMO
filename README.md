@@ -2,7 +2,7 @@
 # TODO-CLI
 
 A simple cli-app todo task manager
-
+This small App is design to eductionnal purpose 
 
 ## Badges
 
@@ -17,55 +17,30 @@ A simple cli-app todo task manager
 - Filter todo 
 - Add todo
 - Update todo
-- Delete todo
+- Delete todo*
 
 
 ## Installation
 
-Install my-project with npm
+Install todo 
 
 ```bash
-  npm install my-project
-  cd my-project
+  https://github.com/ben-sentenac/TODO-CLI-APP-DEMO.git
+  cd <your directory>
+  sudo npm link
+  todo
 ```
-    
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
-
-```bash
-  cd my-project
-```
-
-Install dependencies
-
-```bash
-  npm install
-```
-
-Start the server
-
-```bash
-  npm run start
-```
-
-
 ## Usage/Examples
 
-```sh
+```bash
 $ todo [command] [options] [argument]
 $ todo --List -s name="todo_name"
 ```
 
-
-## API Reference
-
+## get help
+```bash
+  $ todo -h
+```
 #### Get all items
 
 ```bash
@@ -80,21 +55,14 @@ $ todo --List -s name=todo_name
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
 | `name`      | `string` | **Required**. name of item to fetch |
 | `completed`      | `string` | **Required**. completed of item to fetch |
 
 
 ## Documentation
-
-[Documentation](https://linktodocumentation)
-
-
-## Demo
-
-Insert gif or link to demo
-
-
+```
+todo -h
+```
 ## Appendix
 
 This cli-app is only for educationnal purpose
@@ -109,5 +77,5 @@ I'm musician passionate by code...
 
 
 ## 🛠 Skills
-Javascript, HTML, CSS...
+Javascript,PHP, HTML, CSS...
 
